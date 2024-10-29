@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <div class="back d-flex flex-column justify-content-center text-center" id="bgContainer">
+                    <h1>Color Picker</h1>
+                    <div>
+                        <button class="butt1" onclick="manipulateStyle()" >#ccff66</button>
+                        <button class="butt2" onclick="changeName()">#80ffff</button>
+                        <button class="butt3" onclick="diifferent()" >#ff80ff</button>
+                        <button class="butt4" onclick="workfella()" >#ffff1a</button>
+                    </div>
+                    <div>
+                        <button class="butt5">Background color:<span id="black">#ccff66</span></button>
+                    </div>
+                   
+            
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+               <div class="images d-flex flex-column justify-content-center text-center" id="flowers">
+                <h1>Images</h1>
+                <div>
+                    <button class="button1" onclick="green()">Green </button>
+                    <button class="button2" onclick="blue()">blue</button>
+                    <button class="button3" onclick="pink()">pink</button>
+                    <button class="button4" onclick="yellow()">yellow</button>
+                </div>
+                <div>
+                    <button class="button5">BackgroundImage:Flowers</button>
+                </div>
+
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let bgContainerE1=document.getElementById("bgContainer");
+        let blackE1=document.getElementById("black");
+        let flowersE1=document.getElementById("flowers");
+
+
+
+        function green(){
+            flowersE1.style.backgroundImage="url('https://as1.ftcdn.net/v2/jpg/08/21/85/12/1000_F_821851252_i5Uqlq7D7ucew7CuUIMRDlxbRAkA9HlT.jpg')"
+        } 
+        function blue(){
+            flowersE1.style.backgroundImage="url('https://img.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-flowers-close-up_23-2149139108.jpg?t=st=1730110092~exp=1730113692~hmac=79a94b50ab345213af934cc54843931255d9ef9cd180bd1a4fdbdf83ad015403&w=740')"  
+        }
+        function pink(){
+            flowersE1.style.backgroundImage="url('https://img.freepik.com/premium-photo/garden-pink-flowers-background_87720-261548.jpg?w=900')"
+
+        } 
+        function yellow(){
+            flowersE1.style.backgroundImage="url('https://media.istockphoto.com/id/918413974/photo/beautiful-dandelion-background-yellow-flowers-is-blooming-in-the-garden.jpg?s=1024x1024&w=is&k=20&c=MtVGoQ-v8IoKyYfI-RFew5JWN0NxnAsE2HDKFN7h-IM=')"
+        }
+
+        
+ 
+
+        function manipulateStyle(){
+            bgContainerE1.style.backgroundColor="#ccff66"
+            blackE1.textContent="#ccff66"
+            blackE1.style.color="#ccff66"
+            
+        }
+        function changeName(){
+            bgContainerE1.style.backgroundColor="#80ffff"
+            blackE1.textContent="#80ffff"
+            blackE1.style.color="#80ffff"
+            
+
+        }
+        function diifferent(){
+            bgContainerE1.style.backgroundColor="#ff80ff"
+            blackE1.textContent="#ff80ff"
+            blackE1.style.color="#ff80ff"
+
+        }
+        function workfella(){
+            bgContainerE1.style.backgroundColor="#ffff1a"
+            blackE1.textContent="#ffff1a"
+             blackE1.style.color="#ffff1a"
+        }
+    </script>
+
+
+</body>
+
+</html>
